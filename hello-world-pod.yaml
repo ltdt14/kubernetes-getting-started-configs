@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: hello-world
+  labels:
+    name: hello-world
+spec:
+  containers:
+    - name: hello-world
+      image: ltodt/get-started:part1
+      ports:
+        - name: hello-world
+          containerPort: 80
